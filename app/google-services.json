@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "378405488228",
+    "project_id": "emd1-b8d90",
+    "storage_bucket": "emd1-b8d90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378405488228:android:9c5a01a9aad8127d4fc171",
+        "android_client_info": {
+          "package_name": "com.avv.cardiologoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378405488228-qfok8nrsq91b6k1d53t0356rf1g6jfdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkNkndSyWmV7euvIMbegApQ7Zdk9oZDjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378405488228-qfok8nrsq91b6k1d53t0356rf1g6jfdq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
