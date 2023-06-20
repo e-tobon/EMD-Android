@@ -34,7 +34,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             val password = binding.etPassword.text.toString()
 
             if(email.isEmpty()){
-                Toast.makeText(requireContext(),"Ingres un email", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(),"Ingresa un email", Toast.LENGTH_SHORT).show()
             }
 
 
@@ -60,7 +60,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                 if (task.isSuccessful){
                     findNavController().navigate(R.id.action_loginFragment_to_historialClinicoFragment)
                 }else{
-                    Toast.makeText(requireContext(),"No fue posible realizar el logeo", Toast.LENGTH_LONG).show()
+                    Toast.makeText(requireContext(),"No tienes cuenta?, Crea una para continuar...", Toast.LENGTH_LONG).show()
                 }
             }
     }

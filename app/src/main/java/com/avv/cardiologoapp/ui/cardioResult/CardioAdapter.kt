@@ -9,10 +9,13 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.avv.cardiologoapp.data.cardioValue
 import com.avv.cardiologoapp.databinding.CardioItemBinding
 
-class CardioAdapter(private val context: Context, private val cardioList: List<cardioValue>): RecyclerView.Adapter<CardioAdapter.ViewHolder>() {
+class CardioAdapter(private val context: Context, private val cardioList:cardioValue): RecyclerView.Adapter<CardioAdapter.ViewHolder>() {
 
     class ViewHolder(view: CardioItemBinding): RecyclerView.ViewHolder(view.root){
-        val tvCardioValu = view.tvCardioValue
+        val tvCardioValue = view.tvBPMValue
+        val tvIncX = view.tvValueX
+        val tvIncY = view.tvValueY
+        val tvIncZ = view.tvValueZ
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -20,10 +23,13 @@ class CardioAdapter(private val context: Context, private val cardioList: List<c
         return ViewHolder(binding)
     }
 
-    override fun getItemCount(): Int = cardioList.size
+    override fun getItemCount(): Int = 1
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.tvCardioValu.text = cardioList[position].frecuenica.toString()
+        holder.tvCardioValue.text = cardioList.IMU.BPM.toString()
+        holder.tvIncX.text = cardioList.IMU.InclinacionX.toString()
+        holder.tvIncY.text = cardioList.IMU.InclinacionY.toString()
+        holder.tvIncZ.text = cardioList.IMU.InclinacionZ.toString()
     }
 
 }
