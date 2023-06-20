@@ -9,5 +9,14 @@
         android:id="@+id/historialClinicoFragment"
         android:name="com.avv.cardiologoapp.ui.HistorialClinicoFragment"
         android:label="fragment_historial_clinico"
-        tools:layout="@layout/fragment_historial_clinico" />
+        tools:layout="@layout/fragment_historial_clinico" >
+        <action
+            android:id="@+id/action_historialClinicoFragment_to_resultCardioFragment"
+            app:destination="@id/resultCardioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultCardioFragment"
+        android:name="com.avv.cardiologoapp.ui.cardioResult.ResultCardioFragment"
+        android:label="fragment_result_cardio"
+        tools:layout="@layout/fragment_result_cardio" />
 </navigation>
